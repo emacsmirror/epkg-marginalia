@@ -88,7 +88,7 @@ Uses information provided by `borg', `epkg' and `package'."
          (symb (intern name))
          ;; Upstream 459f230 seems like overkill, considering its cost.
          (desc (or (car (alist-get symb package-alist))
-                   (if-let (built-in (assq symb package--builtins))
+                   (if-let ((built-in (assq symb package--builtins)))
                        (package--from-builtin built-in)
                      (car (alist-get symb package-archive-contents))))))
     (when (or epkg desc)
