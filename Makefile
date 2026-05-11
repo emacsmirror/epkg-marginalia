@@ -13,6 +13,7 @@ DEPS += emacsql
 DEPS += epkg/lisp
 DEPS += llama
 DEPS += marginalia
+DEPS += seq
 
 LOAD_PATH ?= $(addprefix -L ../,$(DEPS))
 LOAD_PATH += -L .
