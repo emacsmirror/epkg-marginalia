@@ -8,7 +8,7 @@
 
 ;; Package-Version: 1.1.6
 ;; Package-Requires: (
-;;     (emacs     "28.1")
+;;     (emacs     "29.1")
 ;;     (compat    "31.1")
 ;;     (cond-let   "1.1")
 ;;     (epkg       "4.2")
